@@ -29,10 +29,10 @@ public class WallpaperBrushItem extends Item {
                 BlockEntity be = level.getBlockEntity(placePos);
 
                 if (be instanceof WallpaperBlockEntity wallpaperBE) {
-                    CompoundTag nbt = context.getItemInHand().getTag();
+                    CompoundTag nbt = context.getItemInHand().getOrCreateTag();
                     String texturePath = "orpheus:textures/wallpaper/image1.png"; // デフォルト画像
 
-                    if (nbt != null && nbt.contains("texture")) {
+                    if (nbt.contains("texture")) {
                         texturePath = nbt.getString("texture");
                     }
                     

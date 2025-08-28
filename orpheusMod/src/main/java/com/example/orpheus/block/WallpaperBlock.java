@@ -1,7 +1,7 @@
 package com.example.orpheus.block;
 
 import com.example.orpheus.blockentity.WallpaperBlockEntity;
-import com.mojang.serialization.MapCodec; // これをインポート
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.RenderShape;
@@ -11,14 +11,12 @@ import org.jetbrains.annotations.Nullable;
 
 public class WallpaperBlock extends BaseEntityBlock {
 
-    // ▼▼▼ この行を追加 ▼▼▼
     public static final MapCodec<WallpaperBlock> CODEC = simpleCodec(WallpaperBlock::new);
 
     public WallpaperBlock(Properties properties) {
         super(properties);
     }
 
-    // ▼▼▼ このメソッドを追加 ▼▼▼
     @Override
     protected MapCodec<? extends BaseEntityBlock> codec() {
         return CODEC;
@@ -32,6 +30,7 @@ public class WallpaperBlock extends BaseEntityBlock {
 
     @Override
     public RenderShape getRenderShape(BlockState state) {
-        return RenderShape.ENTITYBLOCK_ANIMATED;
+        // このブロック自体は描画せず、BlockEntityRendererに任せる
+        return RenderShape.INVISIBLE;
     }
 }

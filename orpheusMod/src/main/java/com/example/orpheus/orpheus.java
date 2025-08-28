@@ -13,7 +13,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(orpheus.MOD_ID)
 public class orpheus {
-    public static final String MOD_ID = "orpheus"; // MOD IDを "orpheus" に統一
+    public static final String MOD_ID = "orpheus";
 
     public orpheus() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

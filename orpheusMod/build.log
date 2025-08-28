@@ -1,0 +1,300 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 21.0.8, JVM: 21.0.8+9-LTS (Eclipse Adoptium), Arch: amd64
+
+> Task :compileJava
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:42: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y0 + offset, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:43: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y0 + offset, z1).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:44: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y0 + offset, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:45: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y0 + offset, z0).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:48: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y1 - offset, z1).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:49: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y1 - offset, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:50: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y1 - offset, z0).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:51: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y1 - offset, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:54: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y1, z0 + offset).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:55: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y0, z0 + offset).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:56: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y0, z0 + offset).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:57: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y1, z0 + offset).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:60: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y1, z1 - offset).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:61: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0, y0, z1 - offset).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:62: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y0, z1 - offset).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:63: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1, y1, z1 - offset).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:66: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0 + offset, y1, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:67: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0 + offset, y0, z0).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:68: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0 + offset, y0, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:69: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x0 + offset, y1, z1).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:72: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1 - offset, y1, z1).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:73: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1 - offset, y0, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:74: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1 - offset, y0, z0).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:75: エラー: シンボルを見つけられません
+                consumer.vertex(matrix, x1 - offset, y1, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                        ^
+  シンボル:   メソッド vertex(Matrix4f,float,float,float)
+  場所: タイプVertexConsumerの変数 consumer
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\init\BlockEntityInit.java:15: エラー: シンボルを見つけられません
+            () -> BlockEntityType.Builder.of(WallpaperBlockEntity::new, BlockInit.WALLPAPER_BLOCK.get()).build(null));
+                                 ^
+  シンボル:   変数 Builder
+  場所: クラス BlockEntityType
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\item\WallpaperBrushItem.java:32: エラー: シンボルを見つけられません
+                    CompoundTag nbt = context.getItemInHand().getTag();
+                                                             ^
+  シンボル:   メソッド getTag()
+  場所: クラス ItemStack
+C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\orpheus.java:19: 警告: [removal] FMLJavaModLoadingContextのget()は推奨されておらず、削除用にマークされています
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+                                                        ^
+エラー26個
+警告1個
+
+> Task :compileJava FAILED
+
+[Incubating] Problems report is available at: file:///C:/Users/taku8/Desktop/to%20practice/MineCraft_DevMod/Just-Kidding-Hostiles/orpheusMod/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler output below.
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:42: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y0 + offset, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:43: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y0 + offset, z1).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:44: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y0 + offset, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:45: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y0 + offset, z0).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, -1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:48: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y1 - offset, z1).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:49: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y1 - offset, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:50: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y1 - offset, z0).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:51: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y1 - offset, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 1, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:54: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y1, z0 + offset).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:55: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y0, z0 + offset).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:56: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y0, z0 + offset).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:57: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y1, z0 + offset).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, -1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:60: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y1, z1 - offset).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:61: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0, y0, z1 - offset).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:62: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y0, z1 - offset).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:63: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1, y1, z1 - offset).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(0, 0, 1).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:66: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0 + offset, y1, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:67: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0 + offset, y0, z0).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:68: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0 + offset, y0, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:69: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x0 + offset, y1, z1).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(-1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:72: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1 - offset, y1, z1).color(255, 255, 255, 255).uv(1, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:73: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1 - offset, y0, z1).color(255, 255, 255, 255).uv(1, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:74: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1 - offset, y0, z0).color(255, 255, 255, 255).uv(0, 1).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\client\renderer\WallpaperBlockEntityRenderer.java:75: エラー: シンボルを見つけられません
+                  consumer.vertex(matrix, x1 - offset, y1, z0).color(255, 255, 255, 255).uv(0, 0).overlayCoords(OverlayTexture.NO_OVERLAY).uv2(packedLight).normal(1, 0, 0).endVertex();
+                          ^
+    シンボル:   メソッド vertex(Matrix4f,float,float,float)
+    場所: タイプVertexConsumerの変数 consumer
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\init\BlockEntityInit.java:15: エラー: シンボルを見つけられません
+              () -> BlockEntityType.Builder.of(WallpaperBlockEntity::new, BlockInit.WALLPAPER_BLOCK.get()).build(null));
+                                   ^
+    シンボル:   変数 Builder
+    場所: クラス BlockEntityType
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\item\WallpaperBrushItem.java:32: エラー: シンボルを見つけられません
+                      CompoundTag nbt = context.getItemInHand().getTag();
+                                                               ^
+    シンボル:   メソッド getTag()
+    場所: クラス ItemStack
+  C:\Users\taku8\Desktop\to practice\MineCraft_DevMod\Just-Kidding-Hostiles\orpheusMod\src\main\java\com\example\orpheus\orpheus.java:19: 警告: [removal] FMLJavaModLoadingContextのget()は推奨されておらず、削除用にマークされています
+          IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+                                                          ^
+  エラー26個
+  警告1個
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 37s
+1 actionable task: 1 executed

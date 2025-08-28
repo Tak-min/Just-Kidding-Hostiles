@@ -1,7 +1,7 @@
 package com.example.orpheus.init;
 
-import com.example.orpheus.orpheus;
 import com.example.orpheus.blockentity.WallpaperBlockEntity;
+import com.example.orpheus.orpheus;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

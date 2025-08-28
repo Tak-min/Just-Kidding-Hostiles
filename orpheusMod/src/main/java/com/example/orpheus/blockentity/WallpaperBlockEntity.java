@@ -10,11 +10,12 @@ import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+
 import javax.annotation.Nullable;
 
 public class WallpaperBlockEntity extends BlockEntity {
-    private String texturePath = "orpheus:textures/wallpaper/image1.png";
-    private Direction face = Direction.NORTH; // デフォルトの向き
+    private String texturePath = "orpheus:textures/wallpaper/image1.png"; // MOD IDを合わせる
+    private Direction face = Direction.NORTH;
 
     public WallpaperBlockEntity(BlockPos pos, BlockState state) {
         super(BlockEntityInit.WALLPAPER_BE.get(), pos, state);
@@ -33,19 +34,20 @@ public class WallpaperBlockEntity extends BlockEntity {
         this.texturePath = nbt.getString("TexturePath");
         this.face = Direction.from3DDataValue(nbt.getInt("Face"));
     }
-    
-    // ゲッターとセッター
+
     public ResourceLocation getTexture() { return new ResourceLocation(texturePath); }
     public void setTexturePath(String path) {
         this.texturePath = path;
-        setChanged(); // 変更を通知
+        setChanged();
+        level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
     }
     public Direction getFace() { return face; }
     public void setFace(Direction face) {
         this.face = face;
         setChanged();
+        level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);
     }
-    
+
     // --- 同期処理 ---
     @Nullable
     @Override

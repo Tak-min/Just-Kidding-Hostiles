@@ -1,0 +1,21 @@
+{
+    "orpheus_place": {
+        "category":"block",
+        "subtitle":"orpheus_place.sub",
+        "sounds": [
+            {
+                "name": "orpheus:orpheus_place"
+            }
+        ]
+    },
+    "orpheus_use": {
+        "category":"block",
+        "subtitle":"orpheus_use.sub",
+        "sounds":[
+            {
+                "name":"orpheus:orpheus_use"
+            }
+        ]
+    }
+
+}

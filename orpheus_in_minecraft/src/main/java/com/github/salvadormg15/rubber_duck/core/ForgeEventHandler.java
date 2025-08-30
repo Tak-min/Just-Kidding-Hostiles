@@ -1,6 +1,6 @@
 package com.github.tak-min.orpheus.core;
 
-import com.github.tak-min.orpheus.RubberDuck;
+import com.github.tak-min.orpheus.orpheus;
 
 import com.github.tak-min.orpheus.constants.CommonConstants;
 import net.minecraft.core.BlockPos;
@@ -76,7 +76,7 @@ public class ForgeEventHandler {
         if (event.getName().toString().startsWith("minecraft:chests")) {
             event.getTable().addPool(LootPool.lootPool()
                 .add(LootTableReference.lootTableReference(
-                    new ResourceLocation(RubberDuck.MODID, "chests/orpheus")))
+                    new ResourceLocation(orpheus.MODID, "chests/orpheus")))
                 .build());
         }
     }

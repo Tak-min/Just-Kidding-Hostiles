@@ -27,13 +27,13 @@ import com.github.tak-min.orpheus.core.ForgeEventHandler;
 import com.github.tak-min.orpheus.core.Registries;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("orpheus")
-public class RubberDuck
+public class orpheus
 {
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MODID = "orpheus";
 
-    public RubberDuck() {
+    public orpheus() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     	bus.addListener(this::setup);
     	bus.addListener(this::enqueue);

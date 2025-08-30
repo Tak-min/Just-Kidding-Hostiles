@@ -35,11 +35,11 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.ticks.TickPriority;
 
-public class RubberDuckBlock extends DiodeBlock {
+public class orpheusBlock extends DiodeBlock {
 	public static final BooleanProperty TRIGGERED = BlockStateProperties.TRIGGERED;
 	public static final BooleanProperty UNLOCK = BooleanProperty.create("unlock");
 
-	public RubberDuckBlock() {
+	public orpheusBlock() {
 		super(Properties.of().mapColor(MapColor.COLOR_YELLOW).pushReaction(PushReaction.DESTROY).strength(0.2f, 0.2f));
 		this.registerDefaultState(
 			this.stateDefinition.any()

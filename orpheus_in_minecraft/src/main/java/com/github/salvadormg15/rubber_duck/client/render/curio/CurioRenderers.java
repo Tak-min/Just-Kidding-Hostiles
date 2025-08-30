@@ -5,6 +5,6 @@ import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 public class CurioRenderers {
     public static void register() {
-        CuriosRendererRegistry.register(Registries.RUBBER_DUCK_ITEM.get(), () -> new RubberDuckCurioRenderer());
+        CuriosRendererRegistry.register(Registries.RUBBER_DUCK_ITEM.get(), () -> new orpheusCurioRenderer());
     }
 }

@@ -11,8 +11,8 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurio;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class RubberDuckItem extends BlockItem implements ICurioItem {
-	public RubberDuckItem(Block block, Properties properties) {
+public class orpheusItem extends BlockItem implements ICurioItem {
+	public orpheusItem(Block block, Properties properties) {
 		super(block, properties);
 	}
 	@Override

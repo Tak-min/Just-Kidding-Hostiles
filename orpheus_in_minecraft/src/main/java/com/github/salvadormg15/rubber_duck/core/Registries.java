@@ -1,8 +1,8 @@
 package com.github.tak-min.oepheus.core;
 
-import com.github.tak-min.oepheus.RubberDuck;
-import com.github.tak-min.oepheus.RubberDuckBlock;
-import com.github.tak-min.oepheus.RubberDuckItem;
+import com.github.tak-min.oepheus.orpheus;
+import com.github.tak-min.oepheus.orpheusBlock;
+import com.github.tak-min.oepheus.orpheusItem;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
@@ -18,23 +18,23 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class Registries {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS,
-			RubberDuck.MODID);
-	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RubberDuck.MODID);
+			orpheus.MODID);
+	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, orpheus.MODID);
 	public static final DeferredRegister<SoundEvent> SOUND_EVENTS = DeferredRegister
-			.create(ForgeRegistries.SOUND_EVENTS, RubberDuck.MODID);
+			.create(ForgeRegistries.SOUND_EVENTS, orpheus.MODID);
 
 	// Blocks
-	public static final RegistryObject<RubberDuckBlock> RUBBER_DUCK_BLOCK = BLOCKS.register("oepheus_block",
-			() -> new RubberDuckBlock());
+	public static final RegistryObject<orpheusBlock> RUBBER_DUCK_BLOCK = BLOCKS.register("oepheus_block",
+			() -> new orpheusBlock());
 	// Items
-	public static final RegistryObject<RubberDuckItem> RUBBER_DUCK_ITEM = ITEMS.register("oepheus_item",
-			() -> new RubberDuckItem(RUBBER_DUCK_BLOCK.get(),
+	public static final RegistryObject<orpheusItem> RUBBER_DUCK_ITEM = ITEMS.register("oepheus_item",
+			() -> new orpheusItem(RUBBER_DUCK_BLOCK.get(),
 					new Item.Properties().stacksTo(4).rarity(Rarity.RARE)));
 	// Sound Events
 	public static final RegistryObject<SoundEvent> RUBBER_DUCK_USE = SOUND_EVENTS.register("oepheus_use",
-			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(RubberDuck.MODID, "oepheus_use")));
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(orpheus.MODID, "oepheus_use")));
 	public static final RegistryObject<SoundEvent> RUBBER_DUCK_PLACE = SOUND_EVENTS.register("oepheus_place",
-			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(RubberDuck.MODID, "oepheus_place")));
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation(orpheus.MODID, "oepheus_place")));
 
     @SubscribeEvent
     public static void buildContents(BuildCreativeModeTabContentsEvent event) {

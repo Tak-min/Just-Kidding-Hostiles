@@ -1,6 +1,6 @@
 package com.github.tak-min.orpheus.client.render.curio;
 
-import com.github.tak-min.orpheus.RubberDuckItem;
+import com.github.tak-min.orpheus.orpheusItem;
 import com.github.tak-min.orpheus.core.Registries;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -17,7 +17,7 @@ import net.minecraft.world.item.ItemStack;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;
 
-public class RubberDuckCurioRenderer implements ICurioRenderer {
+public class orpheusCurioRenderer implements ICurioRenderer {
     @Override
     public <T extends LivingEntity, M extends EntityModel<T>> void render(ItemStack stack, SlotContext slotContext, PoseStack matrixStack, RenderLayerParent<T, M> renderLayerParent, MultiBufferSource renderTypeBuffer, int light, float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
         if(!(renderLayerParent.getModel() instanceof HeadedModel parentModel)) {
@@ -30,13 +30,13 @@ public class RubberDuckCurioRenderer implements ICurioRenderer {
         matrixStack.pushPose();
 
         parentModel.getHead().translateAndRotate(matrixStack);
-        if (item instanceof RubberDuckItem) {
+        if (item instanceof orpheusItem) {
             matrixStack.mulPose(Axis.YP.rotationDegrees(180.0F));
             //Places the duck a little bit upper if there is a helmet
             if(playerEntity.getItemBySlot(EquipmentSlot.HEAD).isEmpty()) {
                 matrixStack.translate(0, -0.25D, 0);
             } else {
-                if(playerEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof RubberDuckItem) {
+                if(playerEntity.getItemBySlot(EquipmentSlot.HEAD).getItem() instanceof orpheusItem) {
                     matrixStack.translate(0, -0.425D, .05D);
                     matrixStack.mulPose(Axis.XP.rotationDegrees(20f));
                 } else {

@@ -1,8 +1,8 @@
-package com.github.tak-min.orpheus.core;
+package com.github.salvadormg15.rubber_duck.core;
 
-import com.github.tak-min.orpheus.orpheus;
+import com.github.salvadormg15.rubber_duck.RubberDuck;
 
-import com.github.tak-min.orpheus.constants.CommonConstants;
+import com.github.salvadormg15.rubber_duck.constants.CommonConstants;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.RandomSource;
@@ -76,7 +76,7 @@ public class ForgeEventHandler {
         if (event.getName().toString().startsWith("minecraft:chests")) {
             event.getTable().addPool(LootPool.lootPool()
                 .add(LootTableReference.lootTableReference(
-                    new ResourceLocation(orpheus.MODID, "chests/orpheus")))
+                    new ResourceLocation(RubberDuck.MODID, "chests/rubber_duck")))
                 .build());
         }
     }

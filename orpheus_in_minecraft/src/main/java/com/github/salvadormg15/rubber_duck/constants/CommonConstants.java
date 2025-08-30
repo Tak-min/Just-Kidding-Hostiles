@@ -1,6 +1,6 @@
-package com.github.tak-min.orpheus.constants;
+package com.github.salvadormg15.rubber_duck.constants;
 
-import com.github.tak-min.orpheus.config.CommonConfigs;
+import com.github.salvadormg15.rubber_duck.config.CommonConfigs;
 
 public class CommonConstants {
     private static Double ENTITY_SPAWN_CHANCE;

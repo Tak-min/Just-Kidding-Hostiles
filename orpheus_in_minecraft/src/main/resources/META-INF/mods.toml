@@ -1,30 +1,31 @@
 modLoader="javafml"
 loaderVersion="[47,)"
 license="MIT License"
-issueTrackerURL="https://github.com/Tak-min/orpheusInMineCraft/issues"
+issueTrackerURL="https://github.com/salvadormg15/Rubber-Duck/issues"
 
 [[mods]]
-    modId="orpheus"
+    modId="rubber_duck"
     version="2.0.1"
-    displayName="orpheus_in_minecraft"
-    displayURL="NONE"
-    logoFile="orpheus.png"
-    authors="Takmin"
-    description="We just need a orpheus to be happy"
+    displayName="Rubber Duck"
+    updateJSONURL="https://gist.githubusercontent.com/salvadormg15/f73e087096fbc1718d101c6d61389352/raw/"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/rubber-duck"
+    logoFile="rubber_duck.png"
+    authors="Salvadormg15"
+    description="We just need a Rubber Duck to be happy"
 
-[[dependencies.orpheus]]
+[[dependencies.rubber_duck]]
     modId="forge"
     mandatory=true
     versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.orpheus]]
+[[dependencies.rubber_duck]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1,1.21)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.orpheus]]
+[[dependencies.rubber_duck]]
     modId="curios"
     mandatory=true
     versionRange="[5.14.1+1.20.1,)"

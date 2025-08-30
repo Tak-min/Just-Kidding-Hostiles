@@ -1,8 +1,8 @@
 {
-    "credit": "Designed by Tak-min",
+    "credit": "Designed by Salvador ---- github/salvadormg15",
     "textures": {
-        "0": "orpheus:item/orpheus",
-        "particle": "orpheus:item/orpheus"
+        "0": "rubber_duck:item/rubber_duck",
+        "particle": "rubber_duck:item/rubber_duck"
     },
     "elements": [
         {

@@ -1,8 +1,8 @@
-package com.github.tak-min.orpheus;
+package com.github.salvadormg15.rubber_duck;
 
-import com.github.tak-min.orpheus.client.render.curio.CurioRenderers;
-import com.github.tak-min.orpheus.config.CommonConfigs;
-import com.github.tak-min.orpheus.constants.CommonConstants;
+import com.github.salvadormg15.rubber_duck.client.render.curio.CurioRenderers;
+import com.github.salvadormg15.rubber_duck.config.CommonConfigs;
+import com.github.salvadormg15.rubber_duck.constants.CommonConstants;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,17 +23,17 @@ import top.theillusivec4.curios.api.SlotTypePreset;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.github.tak-min.orpheus.core.ForgeEventHandler;
-import com.github.tak-min.orpheus.core.Registries;
+import com.github.salvadormg15.rubber_duck.core.ForgeEventHandler;
+import com.github.salvadormg15.rubber_duck.core.Registries;
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod("orpheus")
-public class orpheus
+@Mod("rubber_duck")
+public class RubberDuck
 {
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
-    public static final String MODID = "orpheus";
+    public static final String MODID = "rubber_duck";
 
-    public orpheus() {
+    public RubberDuck() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     	bus.addListener(this::setup);
     	bus.addListener(this::enqueue);

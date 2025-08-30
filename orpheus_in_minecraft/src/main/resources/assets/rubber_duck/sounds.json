@@ -1,19 +1,19 @@
 {
-    "orpheus_place": {
+    "rubber_duck_place": {
         "category":"block",
-        "subtitle":"orpheus_place.sub",
+        "subtitle":"rubber_duck_place.sub",
         "sounds": [
             {
-                "name": "orpheus:orpheus_place"
+                "name": "rubber_duck:rubber_duck_place"
             }
         ]
     },
-    "orpheus_use": {
+    "rubber_duck_use": {
         "category":"block",
-        "subtitle":"orpheus_use.sub",
+        "subtitle":"rubber_duck_use.sub",
         "sounds":[
             {
-                "name":"orpheus:orpheus_use"
+                "name":"rubber_duck:rubber_duck_use"
             }
         ]
     }

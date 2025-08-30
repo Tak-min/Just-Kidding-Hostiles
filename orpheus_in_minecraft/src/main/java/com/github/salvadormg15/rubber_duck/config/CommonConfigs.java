@@ -1,4 +1,4 @@
-package com.github.tak-min.orpheus.config;
+package com.github.salvadormg15.rubber_duck.config;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 

@@ -1,11 +1,11 @@
-package com.github.tak-min.orpheus;
+package com.github.salvadormg15.rubber_duck;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import com.github.tak-min.orpheus.core.Registries;
+import com.github.salvadormg15.rubber_duck.core.Registries;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -35,11 +35,11 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.ticks.TickPriority;
 
-public class orpheusBlock extends DiodeBlock {
+public class RubberDuckBlock extends DiodeBlock {
 	public static final BooleanProperty TRIGGERED = BlockStateProperties.TRIGGERED;
 	public static final BooleanProperty UNLOCK = BooleanProperty.create("unlock");
 
-	public orpheusBlock() {
+	public RubberDuckBlock() {
 		super(Properties.of().mapColor(MapColor.COLOR_YELLOW).pushReaction(PushReaction.DESTROY).strength(0.2f, 0.2f));
 		this.registerDefaultState(
 			this.stateDefinition.any()
@@ -60,7 +60,7 @@ public class orpheusBlock extends DiodeBlock {
 	@Override
 	public InteractionResult use(BlockState p_225533_1_, Level p_225533_2_, BlockPos p_225533_3_, Player p_225533_4_, InteractionHand p_225533_5_, BlockHitResult p_225533_6_) {
 		this.press(p_225533_1_, p_225533_2_, p_225533_3_);
-		p_225533_2_.playSound(p_225533_4_, p_225533_3_, Registries.orpheus_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
+		p_225533_2_.playSound(p_225533_4_, p_225533_3_, Registries.RUBBER_DUCK_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
 		return InteractionResult.sidedSuccess(p_225533_2_.isClientSide);
 	}
 
@@ -153,7 +153,7 @@ public class orpheusBlock extends DiodeBlock {
 			}
 
 			if (playSound) {
-				p_225534_2_.playSound(null, p_225534_3_, Registries.orpheus_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
+				p_225534_2_.playSound(null, p_225534_3_, Registries.RUBBER_DUCK_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
 			}
 
 			if (setNewState) {
@@ -184,7 +184,7 @@ public class orpheusBlock extends DiodeBlock {
 
 		if (flag != flag1) {
 			if (flag) {
-				p_185616_2_.playSound(null, p_185616_3_, Registries.orpheus_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
+				p_185616_2_.playSound(null, p_185616_3_, Registries.RUBBER_DUCK_USE.get(), SoundSource.BLOCKS, 1.3f, 1f);
 				newState = newState.setValue(TRIGGERED, Boolean.valueOf(true));
 			}
 
@@ -249,7 +249,7 @@ public class orpheusBlock extends DiodeBlock {
 	@Override
 	public void onPlace(BlockState p_220082_1_, Level p_220082_2_, BlockPos p_220082_3_, BlockState p_220082_4_, boolean p_220082_5_) {
 		if (p_220082_4_.is(Blocks.AIR)) {
-			p_220082_2_.playSound(null, p_220082_3_, Registries.orpheus_PLACE.get(), SoundSource.BLOCKS, 0.8f, 1f);
+			p_220082_2_.playSound(null, p_220082_3_, Registries.RUBBER_DUCK_PLACE.get(), SoundSource.BLOCKS, 0.8f, 1f);
 		}
 		super.onPlace(p_220082_1_, p_220082_2_, p_220082_3_, p_220082_4_, p_220082_5_);
 	}
@@ -257,7 +257,7 @@ public class orpheusBlock extends DiodeBlock {
 	@Override
 	public void onRemove(BlockState p_196243_1_, Level p_196243_2_, BlockPos p_196243_3_, BlockState p_196243_4_, boolean p_196243_5_) {
 		if (p_196243_4_.is(Blocks.AIR)) {
-			p_196243_2_.playSound(null, p_196243_3_, Registries.orpheus_PLACE.get(), SoundSource.BLOCKS, 0.8f, 1.2f);
+			p_196243_2_.playSound(null, p_196243_3_, Registries.RUBBER_DUCK_PLACE.get(), SoundSource.BLOCKS, 0.8f, 1.2f);
 		}
 		super.onRemove(p_196243_1_, p_196243_2_, p_196243_3_, p_196243_4_, p_196243_5_);
 	}

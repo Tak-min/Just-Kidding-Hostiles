@@ -1,6 +1,6 @@
-package com.github.tak-min.orpheus;
+package com.github.salvadormg15.rubber_duck;
 
-import com.github.tak-min.orpheus.core.Registries;
+import com.github.salvadormg15.rubber_duck.core.Registries;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -11,8 +11,8 @@ import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurio;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;
 
-public class orpheusItem extends BlockItem implements ICurioItem {
-	public orpheusItem(Block block, Properties properties) {
+public class RubberDuckItem extends BlockItem implements ICurioItem {
+	public RubberDuckItem(Block block, Properties properties) {
 		super(block, properties);
 	}
 	@Override
@@ -29,6 +29,6 @@ public class orpheusItem extends BlockItem implements ICurioItem {
 
 	@Override
 	public ICurio.SoundInfo getEquipSound(SlotContext slotContext, ItemStack stack) {
-		return new ICurio.SoundInfo(Registries.orpheus_PLACE.get(), 0.8f, 1.0f);
+		return new ICurio.SoundInfo(Registries.RUBBER_DUCK_PLACE.get(), 0.8f, 1.0f);
 	}
 }
